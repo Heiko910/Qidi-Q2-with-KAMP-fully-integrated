@@ -9,6 +9,9 @@ Adaptive Purging: KAMP allows for the creation of a dense purge line near the p
 Smart Park: The print head can be parked near the print's starting location during the heat-up phase, further minimizing travel distances.
 Voron Purge: For users who prefer it, KAMP includes the option to enable a Voron-style purge, which creates a dense purge pattern in the shape of the Voron brand logo.
 
+> [!WARNING]
+> The files above were created for my personal use and I cannot be held responsible for what they might do to your printer. Use at your own risk.
+
 # __Procedure for configuring KAMP__
 ## 1. File management in the Fluidd interface
    
