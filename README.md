@@ -24,7 +24,9 @@ Within the Fluidd web interface, navigate to the Configuration section.
 ### There are some file duplication: 
 
 You will notice that the Qidi configuration includes duplicate KAMP files in the main configuration directory. 
-For this installation, we will use the files located within the dedicated KAMP folder. <img width="727" height="643" alt="picture 2" src="https://github.com/user-attachments/assets/9a2202dc-bda5-4e73-a3c2-c5cb35a2fa12" />
+For this installation, we will use the files located within the dedicated KAMP folder. <img width="727" height="643" alt="picture 2" src="https://github.com/user-attachments/assets/56ac593b-c509-41c7-81c5-ce23793b568a" />
+
+
 
 ### Relocate duplicate files: 
 
