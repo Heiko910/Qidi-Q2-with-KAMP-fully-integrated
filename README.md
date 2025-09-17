@@ -9,19 +9,47 @@ Adaptive Purging: KAMP allows for the creation of a dense purge line near the p
 Smart Park: The print head can be parked near the print's starting location during the heat-up phase, further minimizing travel distances.
 Voron Purge: For users who prefer it, KAMP includes the option to enable a Voron-style purge, which creates a dense purge pattern in the shape of the Voron brand logo.
 
-Procedure for configuring KAMP
-1. File management in the Fluidd interface
+# __Procedure for configuring KAMP__
+## 1. File management in the Fluidd interface
    
-Within the Fluidd web interface, navigate to the Configuration section. See picture 1<img width="741" height="698" alt="Untitled" src="https://github.com/user-attachments/assets/26e0af36-3c8c-4b4f-8afa-4e0c75f1db16" />
+Within the Fluidd web interface, navigate to the Configuration section.
 
-Acknowledge file duplication: You will notice that the Qidi configuration includes duplicate KAMP files in the main configuration directory. For this installation, we will use the files located within the dedicated KAMP folder. See Picture 2
-Relocate duplicate files: To avoid conflicts, create a new folder named store for delete or Backup_KAMP_Files and move the two duplicate files (KAMP_setting.cfg and Adpative_meshing.cfg) into this new folder. This ensures they are not immediately deleted but are properly isolated from the active configuration. See picture 3
-2. Update the printer.cfg file
-Open the printer.cfg file and modify the line that includes the KAMP settings. See Picture 5
-Change the path: Alter the path to point to the KAMP_settings.cfg file located inside the KAMP folder.
-3. Update the KAMP_settings.cfg file
-Open the KAMP_settings.cfg file, which is located in the KAMP directory. See picture 4 
-Modify the file path: Change the file path at the top of this file to correctly reference its location within the KAMP folder. This ensures the remaining KAMP configuration files are included properly. See picture 6
-4. Update the gcode_macro.cfg file
+<img width="741" height="698" alt="Untitled" src="https://github.com/user-attachments/assets/26e0af36-3c8c-4b4f-8afa-4e0c75f1db16" />
+
+
+
+### There are some file duplication: 
+
+You will notice that the Qidi configuration includes duplicate KAMP files in the main configuration directory. 
+For this installation, we will use the files located within the dedicated KAMP folder. <img width="727" height="643" alt="picture 2" src="https://github.com/user-attachments/assets/9a2202dc-bda5-4e73-a3c2-c5cb35a2fa12" />
+
+### Relocate duplicate files: 
+
+To avoid conflicts, create a new folder named "store for delete" or "Backup_KAMP_Files" and move the two duplicate files (KAMP_setting.cfg and Adpative_meshing.cfg) into this new folder. 
+This ensures they are not immediately deleted but are properly isolated from the active configuration. 
+<img width="971" height="860" alt="picture 3" src="https://github.com/user-attachments/assets/ba843d2a-272b-4304-a3fe-6adc12f4bc27" />
+
+
+
+## 2. Update the KAMP_settings.cfg file
+Open the KAMP_settings.cfg file, which is located in the KAMP directory.
+<img width="957" height="606" alt="picture 4" src="https://github.com/user-attachments/assets/4aa619ea-96dc-46d5-8264-1f04372d3bfe" />
+
+
+Modify the file path: Change the file path at the top of this file to correctly reference its location within the KAMP folder. This ensures the remaining KAMP configuration files are included properly. 
+<img width="1484" height="447" alt="picture 6" src="https://github.com/user-attachments/assets/c65791b4-713a-4274-9938-8565d35d896b" />
+
+## 3. Update the printer.cfg file
+
+Open the printer.cfg file and modify the line that includes the KAMP settings.
+Alter the path to point to the KAMP_settings.cfg file located inside the KAMP folder.
+<img width="911" height="510" alt="picture 5" src="https://github.com/user-attachments/assets/adcba004-8804-4c5a-bb27-bfcd87bd9ac4" />
+
+## 4. Update the gcode_macro.cfg file
+   
 Once the KAMP_settings.cfg is included in printer.cfg and the other KAMP files are referenced, the KAMP features are enabled, but they must be called from a macro.
-Integrate KAMP into the print_start macro: Open the gcode_macro.cfg file and add the necessary KAMP functions to your Print_start macro. This will instruct the printer to execute the new KAMP features at the beginning of each print. See picture 7 for all modifications I made to the Print_Start macro
+
+Integrate KAMP into the print_start macro: Open the gcode_macro.cfg file and add the necessary KAMP functions to your Print_start macro. This will instruct the printer to execute the new KAMP features at the beginning of each print. Here all modifications I made to the Print_Start macro
+
+<img width="962" height="810" alt="picture 7" src="https://github.com/user-attachments/assets/42d33fad-c7e5-4bbc-867a-5433211c688c" />
+
