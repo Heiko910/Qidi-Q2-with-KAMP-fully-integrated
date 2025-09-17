@@ -11,7 +11,8 @@ Voron Purge: For users who prefer it, KAMP includes the option to enable a Voro
 
 Procedure for configuring KAMP
 1. File management in the Fluidd interface
-Within the Fluidd web interface, navigate to the Configuration section. See picture 1
+Within the Fluidd web interface, navigate to the Configuration section. See picture 1<img width="741" height="698" alt="Untitled" src="https://github.com/user-attachments/assets/26e0af36-3c8c-4b4f-8afa-4e0c75f1db16" />
+
 Acknowledge file duplication: You will notice that the Qidi configuration includes duplicate KAMP files in the main configuration directory. For this installation, we will use the files located within the dedicated KAMP folder. See Picture 2
 Relocate duplicate files: To avoid conflicts, create a new folder named store for delete or Backup_KAMP_Files and move the two duplicate files (KAMP_setting.cfg and Adpative_meshing.cfg) into this new folder. This ensures they are not immediately deleted but are properly isolated from the active configuration. See picture 3
 2. Update the printer.cfg file
