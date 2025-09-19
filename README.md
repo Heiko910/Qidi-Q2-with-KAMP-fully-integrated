@@ -58,3 +58,22 @@ Integrate KAMP into the print_start macro: Open the gcode_macro.cfg file an
 
 <img width="962" height="810" alt="picture 7" src="https://github.com/user-attachments/assets/42d33fad-c7e5-4bbc-867a-5433211c688c" />
 
+## 5. additionaly change to Start-Gcode in Quidi Studio or Orca slicer  <br>
+
+
+### first open the Printer Settings 
+
+<img width="962" height="753" alt="picture 8" src="https://github.com/user-attachments/assets/9e381d84-9bf1-4fc4-b21f-7ee172d8f4d2" /> <br>  
+
+
+### Than modify the Star-Gcode in you printer preset
+
+this will remove the factory purge lines
+
+<img width="1381" height="686" alt="picture 9" src="https://github.com/user-attachments/assets/12da5716-fe11-4195-8121-de714b91f952" /> <br>  
+
+
+### Don't forget to click save and name your changed version
+
+<img width="1105" height="652" alt="picture 10" src="https://github.com/user-attachments/assets/61bf8469-5857-4d04-89d9-0fd419ec891b" />
+
